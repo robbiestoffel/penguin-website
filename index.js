@@ -26,7 +26,8 @@ const levels = {
   20500: "King"
 }
 
-const startTime = Date.now();
+// const startTime = Date.now();
+let newTime = 1;
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -101,14 +102,15 @@ function loopDraw() {
     currentOffset = 0;
   }
 
-  const newTime = Math.floor((Date.now() - startTime) / 1000);
+  // const newTime = Math.floor((Date.now() - startTime) / 1000);
 
   secondsCount.innerText = newTime;
 
   if(levels[newTime]) {
     level.innerText = levels[newTime]
   }
-
+  
+  newTime++;
   requestAnimationFrame(loopDraw);
 }
 
