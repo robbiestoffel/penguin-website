@@ -32,8 +32,7 @@ const levels = {
   1000000000000: "Emperor Penguin"
 }
 
-// const startTime = Date.now();
-let newTime = 1;
+const startTime = Date.now();
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -108,7 +107,7 @@ function loopDraw() {
     currentOffset = 0;
   }
 
-  // const newTime = Math.floor((Date.now() - startTime) / 1000);
+  const newTime = Math.floor((Date.now() - startTime) / 1000);
 
   secondsCount.innerText = newTime;
 
@@ -116,7 +115,6 @@ function loopDraw() {
     level.innerText = levels[newTime]
   }
   
-  newTime++;
   requestAnimationFrame(loopDraw);
 }
 
