@@ -23,7 +23,13 @@ const levels = {
   3500: "Underlord",
   4500: "Lord",
   10500: "OverLord",
-  20500: "King"
+  20500: "King",
+  50000: "penguin",
+  100000: "Wabi",
+  500000: "Penguinologist",
+  100000000: "Purple Popsicle",
+  1000000000: "Roseberry",
+  1000000000000: "Emperor Penguin"
 }
 
 // const startTime = Date.now();
@@ -34,7 +40,7 @@ canvas.height = window.innerHeight;
 context.translate(window.innerWidth / 2, window.innerHeight / 2);
 
 const image = new Image();
-image.src = "./pug.png"; // Photo credit to Matthew Henry (https://unsplash.com/photos/U5rMrSI7Pn4)
+image.src = "./assets/peng.jpg"; // Photo credit to Matthew Henry (https://unsplash.com/photos/U5rMrSI7Pn4)
 
 const loopingPugs = 40; // 125 pugs required to cover a full 4K television screen. Tested via Firefox DevTools
 const offsetDistance = 120;
